@@ -1,0 +1,10 @@
+name: 🏃🏻‍♂️ Task
+description: A general task that does not fit into other categories.
+title: "[task]: "
+type: Task
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Give a brief description of the task.

@@ -1,0 +1,20 @@
+name: 🐛 Bug
+description: An unexpected problem or behavior.
+title: "[bug]: "
+type: Bug
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Give a brief description of the bug.
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Replicate
+      description: List the steps to replicate the bug.
+      value: |
+        1. Step 1
+        2. Step 2
+        3. Step 3

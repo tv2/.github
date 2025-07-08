@@ -1,0 +1,10 @@
+name: 🎯 Epic
+description: A large task or endeavor providing value
+title: "[epic]: "
+type: Epic
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Give a description of the epic.
