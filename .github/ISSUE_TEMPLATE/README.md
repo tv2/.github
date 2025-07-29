@@ -1,6 +1,6 @@
 # Issue Templates
 
-This folder contains Issue Templates made available to all TV2 developers. To use these templates, visit "Issues > New issue" in your repo, where these templates will show up as options for creating new issues.
+This folder contains Issue Templates made available to all TV 2 developers. To use these templates, visit "Issues > New issue" in your repo, where these templates will show up as options for creating new issues.
 
 ## Epic
 

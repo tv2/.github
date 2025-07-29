@@ -1,6 +1,6 @@
-# TV2's GitHub Organization Configuration and Public Profile
+# TV 2's GitHub Organization Configuration and Public Profile
 
-This repository contains TV2's public profile as well as [default community health files](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file) for the organization. These files help maintain a consistent and welcoming environment for employees and contributors:
+This repository contains TV 2's public profile as well as [default community health files](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file) for the organization. These files help maintain a consistent and welcoming environment for employees and contributors:
 
 - [Public Profile](profile/README.md)
 - [Issue Templates](.github/ISSUE_TEMPLATE/README.md)
