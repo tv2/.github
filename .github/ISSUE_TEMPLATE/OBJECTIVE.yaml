@@ -1,0 +1,25 @@
+name: 🎯 Objective
+description: Define an Objective and its measurable Key Results (OKRs)
+title: "[objective]: "
+type: Objective
+body:
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: Summarize the objective in and why it matters.
+      placeholder: e.g., Improve developer experience to accelerate delivery
+    validations:
+      required: true
+  - type: textarea
+    id: key_results
+    attributes:
+      label: Key Results
+      description: |
+        List 2–5 measurable results that indicate progress; one per line.
+      placeholder: |
+        - [ ] KR1 — Reduce average PR cycle time from 3 days to 1 day
+        - [ ] KR2 — Increase CI pass rate from 85% to 97%
+        - [ ] KR3 — Cut flaky test rate below 1%
+    validations:
+      required: true
