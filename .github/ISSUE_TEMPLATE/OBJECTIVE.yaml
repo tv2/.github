@@ -3,12 +3,11 @@ description: Define an Objective and its measurable Key Results (OKRs)
 title: "[objective]: "
 type: Objective
 body:
-  - type: input
+  - type: textarea
     id: description
     attributes:
       label: Description
-      description: Summarize the objective in and why it matters.
-      placeholder: e.g., Improve developer experience to accelerate delivery
+      description: Summarize the objective and why it matters.
     validations:
       required: true
   - type: textarea
