@@ -1,11 +1,75 @@
----
-name: 🏃🏻‍♂️ Task
-description: A general task that does not fit into other categories.
-title: "[task]: "
-type: Task
+name: "Task"
+description: "Work item that goes through refinement before development"
+title: "[Task] <short title>"
+labels: ["task"]
+
 body:
   - type: textarea
-    id: description
+    id: purpose
     attributes:
-      label: Description
-      description: Give a brief description of the task.
+      label: Purpose
+      description: Briefly explain why this task is important and what it delivers.
+      placeholder: |
+        Briefly describe what the task should deliver and why it matters.
+        e.g. Add caching to CI pipelines to reduce build time.
+    validations:
+      required: true
+
+  # --- Do we want to estimate the size of the task? If yes, this is my suggestion,
+  # since we used T-shirt sizes in the old DevOps team and it worked well.
+  # This combines that approach with a bit of planning poker. ---
+  - type: dropdown
+    id: size
+    attributes:
+      label: Size (T-shirt)
+      options: [XS, S, M, L, XL]
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: What must be true for the task to be considered complete.
+      placeholder: |
+        Examples:
+        - [ ] When the pipeline runs, the new caching is used and reduces build time.
+        - [ ] When the feature flag is enabled, the new UI is visible to all users.
+        - [ ] When Stefan can press the button without getting an error, we are done.
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Link to other issues, external reviews, etc.
+      placeholder: |
+        - Blocked by: #123
+        - Blocks: #456
+
+  - type: textarea
+    id: design
+    attributes:
+      label: Design / Solution Direction
+      description: Short note or link to diagram/ADR if relevant.
+
+  # --- Not sure if we really need this, but it was part of the given requirements. ---
+  - type: textarea
+    id: data_env
+    attributes:
+      label: Data & Environments
+      description: Note any required data, access, or environment setup.
+      placeholder: "e.g. Test dataset, staging environment configuration…"
+
+  - type: checkboxes
+    id: refinement_ready
+    attributes:
+      label: Refinement Ready (Definition of Ready)
+      description: All must be ✅ before the task can move to Active Development.
+      options:
+        - label: Purpose is clear and understood
+        - label: Acceptance Criteria are defined
+        - label: Dependencies are identified and linked
+        - label: Design / solution direction is agreed
+        - label: Data & environments are in place
+        - label: Size is estimated and acceptable
+        - label: No unknown unknowns
