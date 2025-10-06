@@ -14,9 +14,6 @@ body:
     validations:
       required: true
 
-  # --- Do we want to estimate the size of the task? If yes, this is my suggestion,
-  # since we used T-shirt sizes in the old DevOps team and it worked well.
-  # This combines that approach with a bit of planning poker. ---
   - type: dropdown
     id: scope
     attributes:
