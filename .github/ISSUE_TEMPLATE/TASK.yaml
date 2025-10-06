@@ -30,8 +30,6 @@ body:
         - [ ] When the pipeline runs, the new caching is used and reduces build time.
         - [ ] When the feature flag is enabled, the new UI is visible to all users.
         - [ ] When a user can press the green button without getting an error.
-
-
   - type: textarea
     id: design
     attributes:
