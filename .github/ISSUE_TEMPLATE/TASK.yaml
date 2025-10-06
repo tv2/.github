@@ -10,7 +10,7 @@ body:
       label: Purpose
       description: Briefly explain why this task is important and what it delivers.
       placeholder: |
-        To reduce build time in CI, we need to add caching to CI pipelines .
+        To reduce build time in CI, we need to add caching to CI pipelines.
     validations:
       required: true
 
