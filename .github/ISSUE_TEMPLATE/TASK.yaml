@@ -18,12 +18,10 @@ body:
   # since we used T-shirt sizes in the old DevOps team and it worked well.
   # This combines that approach with a bit of planning poker. ---
   - type: dropdown
-    id: size
+    id: scope
     attributes:
-      label: Size (T-shirt)
-      options: [XS, S, M, L, XL]
-    validations:
-      required: true
+      label: Scope
+      options: [S, M, L]
 
   - type: textarea
     id: acceptance
