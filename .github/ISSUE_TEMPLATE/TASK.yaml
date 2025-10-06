@@ -1,5 +1,5 @@
 name: "Task"
-description: "Work item that goes through refinement before development"
+description: "A general task with a clear purpose."
 title: "[Task] <short title>"
 labels: ["task"]
 
