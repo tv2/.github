@@ -40,11 +40,14 @@ body:
 
   # --- Not sure if we really need this, but it was part of the given requirements. ---
   - type: textarea
-    id: data_env
+    id: prerequisites
     attributes:
-      label: Data & Environments
-      description: Note any required data, access, or environment setup.
-      placeholder: "e.g. Test dataset, staging environment configuration…"
+      label: Prerequisites
+      description: Note any prerequisites like required data, accesses, or environment setup.
+      placeholder: |
+        - [ ] Administrative rights to an AWS Account
+        - [ ] Data on PRs merged in march.
+        - [ ] A tenant on the Developer Cloud Platform.
 
   - type: checkboxes
     id: refinement_ready
