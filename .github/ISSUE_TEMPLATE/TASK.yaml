@@ -1,7 +1,7 @@
 name: "Task"
 description: "A general task with a clear purpose."
 title: "[Task] <short title>"
-labels: ["task"]
+type: Task
 
 body:
   - type: textarea
