@@ -38,7 +38,6 @@ body:
       label: Design / Solution Direction
       description: Short note or link to diagram/ADR if relevant.
 
-  # --- Not sure if we really need this, but it was part of the given requirements. ---
   - type: textarea
     id: prerequisites
     attributes:
