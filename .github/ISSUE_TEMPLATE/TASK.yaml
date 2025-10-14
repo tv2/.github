@@ -60,5 +60,5 @@ body:
         - label: "4. 'Prerequisites' are identified and clearly defined"
         - label: "5. 'Time Estimate' is provided"
         - label: "6. No unknown unknowns, so the task can flow uninterrupted"
-        - label: "7. 'Dependencies' parent epics aand blocking tasks are identified and linked"
+        - label: "7. 'Dependencies' parent epics and blocking tasks are identified and linked"
         - label: "8. 'Sub-issues' are created to break down the work if needed (can be done after refinement)"
