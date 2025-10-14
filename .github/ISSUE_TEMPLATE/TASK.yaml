@@ -54,11 +54,11 @@ body:
       label: Refinement Criteria
       description: All criteria must be marked with "✅" before the task is refined sufficiently for development to begin.
       options:
-        - label: "1. 'Purpose' is clear and understood"
-        - label: "2. 'Design / solution direction' is unambiguous"
-        - label: "3. 'Acceptance Criteria' are clearly defined"
-        - label: "4. 'Prerequisites' are identified and clearly defined"
-        - label: "5. 'Time Estimate' is provided"
-        - label: "6. No unknown unknowns, so the task can flow uninterrupted"
-        - label: "7. 'Dependencies' parent epics and blocking tasks are identified and linked"
-        - label: "8. 'Sub-issues' are created to break down the work if needed"
+        - label: "'Purpose' is clear and understood"
+        - label: "'Design / solution direction' is unambiguous"
+        - label: "'Acceptance Criteria' are clearly defined"
+        - label: "'Prerequisites' are identified and clearly defined"
+        - label: "'Time Estimate' is provided"
+        - label: "'Dependencies' parent epics and blocking tasks are identified and linked"
+        - label: "'Sub-issues' are created to break down the work if needed"
+        - label: "No unknown unknowns, so the task can flow uninterrupted"
