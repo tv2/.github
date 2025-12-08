@@ -1,6 +1,6 @@
 name: "📋 Task"
 description: "A general task with a clear purpose."
-title: "[Task]: "
+title: "[task]: "
 type: Task
 
 body:
