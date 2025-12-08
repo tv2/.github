@@ -27,35 +27,23 @@ body:
       required: true
 
   - type: textarea
-    id: definition-of-awesome
+    id: target-condition
     attributes:
-      label: Definition of Awesome
+      label: Target Condition
       description: How would we like it to be? Describe the ideal state or vision we're working toward.
-      value: |
-        In the ideal state success looks like:
-
-        - ...
-    validations:
-      required: true
-
-  - type: textarea
-    id: next-target-condition
-    attributes:
-      label: Next Target Condition
-      description: X weeks from now, what has changed? Define a specific, measurable target condition with a timeframe.
       value: |
         What will be different:
 
         - ...
 
-        How we'll measure success:
+        How we will measure success:
 
         - ...
     validations:
       required: true
 
   - type: textarea
-    id: experiments
+    id: actions
     attributes:
       label: Actions
       description: List of actions to take toward the target condition. Add three initially, and if needed, add more during evaluation.
@@ -73,8 +61,8 @@ body:
 
         **Instructions for use:**
 
-        1. Create a new issue using this template for an improvement kata. One or two is recommended per cycle.
-        2. Assign owners and due dates for the improvement kata.
+        1. Create a new issue using this template for an improvement kata. One or two is recommended per improvement kata cycle.
+        2. Assign owners and due dates for the improvement kata(s).
         3. The team works on the defined actions toward the target condition over the set timeframe. Owners monitor and and evaluate progress continuously.
         4. At the end of the timeframe, evaluate whether the target condition was achieved.
            - If achieved, celebrate success and proceed with new improvement katas as needed.
