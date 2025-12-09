@@ -1,6 +1,6 @@
 name: "📋 Task"
 description: "A general task with a clear purpose."
-title: "[Task] <short title>"
+title: "[task]: "
 type: Task
 
 body:
@@ -8,7 +8,7 @@ body:
     id: purpose
     attributes:
       label: Purpose
-      description: Briefly explain why this task is important and what it delivers.
+      description: Briefly explain why this task is important and what it delivers, by focusing on the "What" and "Why".
       placeholder: |
         To reduce build time in CI, we need to add caching to CI pipelines.
     validations:
@@ -18,8 +18,8 @@ body:
     id: time_estimate
     attributes:
       label: Time Estimate
-      description: Rough estimate of how much time this task will take to complete in work days (considering time available).
-      placeholder: "e.g. 0.5 work days, 1 work day, 4 work days"
+      description: Rough estimate of how much time this task will take to complete in actual hours spent.
+      placeholder: "e.g. 4 hours, 8 hours, 32 hours"
 
   - type: textarea
     id: acceptance
@@ -33,10 +33,13 @@ body:
         - [ ] When a user can press the green button without getting an error.
 
   - type: textarea
-    id: design
+    id: ideas
     attributes:
-      label: Design / Solution Direction
-      description: Short note or link to diagram/ADR if relevant.
+      label: Ideas and considerations
+      description: Provide any design ideas, solution directions, or considerations for implementation.
+      placeholder: |
+        - Consider using library X for better performance.
+        - Make sure to follow accessibility guidelines.
 
   - type: textarea
     id: prerequisites
@@ -55,10 +58,10 @@ body:
       description: All criteria must be marked with "✅" before the task is refined sufficiently for development to begin.
       options:
         - label: "'Purpose' is clear and understood"
-        - label: "'Design / solution direction' is unambiguous"
-        - label: "'Acceptance Criteria' are clearly defined"
-        - label: "'Prerequisites' are identified and clearly defined"
+        - label: "'Ideas and considerations' are relevant and helpful"
+        - label: "'Acceptance Criteria' are obtainable and testable"
+        - label: "'Prerequisites' are relevant beyond common knowledge"
         - label: "'Time Estimate' is provided"
-        - label: "'Dependencies' parent epics and blocking tasks are identified and linked"
+        - label: "'Relationships' is configured to link objective, blocked by or is-blocking"
         - label: "'Sub-issues' are created to break down the work if needed"
-        - label: "No unknown unknowns, so the task can flow uninterrupted"
+        - label: "'Known unknowns' are identified, so the task can flow uninterrupted"
