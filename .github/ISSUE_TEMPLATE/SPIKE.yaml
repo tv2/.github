@@ -1,7 +1,7 @@
 name: "🔍 Spike"
 description: "When we need to investigate something before deciding on a solution."
 title: "[spike]: "
-labels: ["type:spike"]
+type: Spike
 body:
   - type: markdown
     attributes:
