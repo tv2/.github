@@ -1,0 +1,35 @@
+
+name: "🔍 Spike"
+description: "When we need to investigate something before deciding on a solution."
+title: ""
+labels: ["type:spike"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What are we trying to understand?
+      placeholder: >
+        What is it that we dont know?
+    validations:
+      required: true
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: What will we investigate?
+      placeholder: >
+        What methods, parts of the code, logs, or systems will we investigate?
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: When is the spike done?
+      placeholder: >
+        Eksempler:
+        - We understand the root cause
+        - We have 1–2 possible solution directions
+        - We know how to test a solution
+    validations:
+      required: true
