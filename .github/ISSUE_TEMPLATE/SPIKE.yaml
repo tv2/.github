@@ -1,0 +1,87 @@
+name: "🔍 Spike"
+description: "When we need to investigate something before deciding on a solution."
+title: "[spike]: "
+type: Spike
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Spike Investigation
+        
+        A spike is a time-boxed investigation to reduce uncertainty. Use this template to define what you're exploring, how you'll explore it, and what outcomes you expect.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What are we trying to understand?
+      description: Describe the unknown or uncertainty that needs to be resolved before proceeding with implementation.
+      placeholder: |
+        Examples:
+        - Can we integrate with the external API using OAuth2?
+        - What is the performance impact of approach A vs approach B?
+        - Which database schema design best supports our query patterns?
+    validations:
+      required: true
+
+  - type: input
+    id: timebox
+    attributes:
+      label: Time Box
+      description: Maximum time to spend on this investigation.
+      placeholder: "e.g. 4 hours, 8 hours, 2 days"
+    validations:
+      required: true
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: Investigation Approach
+      description: What methods, code, documentation, or systems will you investigate? Be specific about your plan.
+      placeholder: |
+        Examples:
+        - Review authentication flow in external API documentation
+        - Build proof-of-concept with both approaches and benchmark performance
+        - Create test database schema and run sample queries
+        - Interview team members who worked on similar features
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: Expected Deliverable
+      description: What tangible output will this spike produce?
+      placeholder: |
+        Examples:
+        - [ ] Decision document comparing options A and B with recommendation
+        - [ ] Proof-of-concept code demonstrating feasibility
+        - [ ] Architecture Decision Record (ADR) documenting the chosen approach
+        - [ ] Summary document with findings and next steps
+    validations:
+      required: true
+
+  - type: textarea
+    id: success_criteria
+    attributes:
+      label: Success Criteria
+      description: How will we know the spike was successful? What questions must be answered?
+      placeholder: |
+        Examples:
+        - [ ] We understand the root cause of the performance issue
+        - [ ] We have 2–3 evaluated solution directions with pros/cons
+        - [ ] We know how to test and validate the chosen solution
+        - [ ] We can estimate implementation effort with confidence
+        - [ ] Technical risks are identified and documented
+    validations:
+      required: true
+
+  - type: textarea
+    id: follow_up
+    attributes:
+      label: Follow-up Actions
+      description: What happens after the spike is complete? (Optional - can be filled in during or after investigation)
+      placeholder: |
+        Examples:
+        - Create task to implement recommended solution
+        - Schedule meeting to discuss findings with team
+        - Create tasks for identified technical debt or risks
