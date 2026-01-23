@@ -5,6 +5,18 @@ title: "[epic]: "
 type: Epic
 body:
   - type: textarea
+    id: user_story
+    attributes:
+      label: User Story
+      description: Use the standard agile story format.
+      value: |
+        **As a** [role],
+        **I want** [an action or feature],
+        **So that** [a reason or benefit].
+    validations:
+      required: true
+
+  - type: textarea
     id: description
     attributes:
       label: Description

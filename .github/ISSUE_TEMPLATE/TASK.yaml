@@ -1,16 +1,23 @@
 name: "📋 Task"
-description: "A general task with a clear purpose."
+description: "A task with a clear end-user, intent and purpose."
 title: "[task]: "
 type: Task
 
 body:
-  - type: textarea
-    id: purpose
+  - type: markdown
     attributes:
-      label: Purpose
-      description: Briefly explain why this task is important and what it delivers, by focusing on the "What" and "Why".
-      placeholder: |
-        To reduce build time in CI, we need to add caching to CI pipelines.
+      value: |
+        Please ensure this task isn't already requested by searching existing issues.
+
+  - type: textarea
+    id: user_story
+    attributes:
+      label: User Story
+      description: Use the standard agile story format.
+      value: |
+        **As a** [role],
+        **I want** [an action or feature],
+        **So that** [a reason or benefit].
     validations:
       required: true
 
@@ -52,16 +59,23 @@ body:
         - [ ] A tenant on the Developer Cloud Platform.
 
   - type: checkboxes
+    id: continuous_prioritization_criteria
+    attributes:
+      label: Continuous Prioritization Criteria
+      description: All criteria must be marked with "✅" before the task is sufficiently described for prioritization to be made.
+      options:
+        - label: "'Purpose' is clear and understood"
+        - label: "'Relationships' is configured to link Objective, Epic, LeanIX application, blocked by or is-blocking"
+
+  - type: checkboxes
     id: refinement_criteria
     attributes:
       label: Refinement Criteria
       description: All criteria must be marked with "✅" before the task is refined sufficiently for development to begin.
       options:
-        - label: "'Purpose' is clear and understood"
         - label: "'Ideas and considerations' are relevant and helpful"
         - label: "'Acceptance Criteria' are obtainable and testable"
         - label: "'Prerequisites' are relevant beyond common knowledge"
         - label: "'Time Estimate' is provided"
-        - label: "'Relationships' is configured to link objective, blocked by or is-blocking"
         - label: "'Sub-issues' are created to break down the work if needed"
         - label: "'Known unknowns' are identified, so the task can flow uninterrupted"
