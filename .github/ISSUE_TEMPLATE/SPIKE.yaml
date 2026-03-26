@@ -25,6 +25,17 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    id: user_story
+    attributes:
+      label: Motivation as a User Story
+      description: Use the standard agile story format to describe the motivation for this spike from the perspective of an end-user or stakeholder.
+      value: |
+        **As a** [role],
+        **I want** [an action or feature],
+        **So that** [a reason or benefit].
+
+
   - type: input
     id: timebox
     attributes:
