@@ -13,19 +13,6 @@ body:
         https://www.mountaingoatsoftware.com/blog/spikes
 
   - type: textarea
-    id: question
-    attributes:
-      label: What are we trying to understand?
-      description: Describe the unknown or uncertainty that needs to be resolved before proceeding with implementation.
-      value: |
-        Examples:
-        - Can we integrate with the external API using OAuth2?
-        - What is the performance impact of approach A vs approach B?
-        - Which database schema design best supports our query patterns?
-    validations:
-      required: true
-
-  - type: textarea
     id: user_story
     attributes:
       label: Motivation as a User Story
@@ -34,7 +21,21 @@ body:
         **As a** [role],
         **I want** [an action or feature],
         **So that** [a reason or benefit].
+    validations:
+      required: true
 
+  - type: textarea
+    id: question
+    attributes:
+      label: Questions that should be answered
+      description: List the specific questions this spike should answer. Be as detailed as possible to guide the investigation.
+      value: |
+        Examples:
+        - Can we integrate with the external API using OAuth2?
+        - What is the performance impact of approach A vs approach B?
+        - Which database schema design best supports our query patterns?
+    validations:
+      required: true
 
   - type: input
     id: timebox
