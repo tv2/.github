@@ -13,10 +13,22 @@ body:
         https://www.mountaingoatsoftware.com/blog/spikes
 
   - type: textarea
+    id: user_story
+    attributes:
+      label: Motivation as a User Story
+      description: Use the standard agile story format to describe the motivation for this spike from the perspective of an end-user or stakeholder.
+      value: |
+        **As a** [role],
+        **I want** [an action or feature],
+        **So that** [a reason or benefit].
+    validations:
+      required: true
+
+  - type: textarea
     id: question
     attributes:
-      label: What are we trying to understand?
-      description: Describe the unknown or uncertainty that needs to be resolved before proceeding with implementation.
+      label: Questions that should be answered
+      description: List the specific questions this spike should answer. Be as detailed as possible to guide the investigation.
       value: |
         Examples:
         - Can we integrate with the external API using OAuth2?
